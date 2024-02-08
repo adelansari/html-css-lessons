@@ -1,0 +1,35 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+table {
+  width: 90%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+table,
+h1 {
+  margin: 25px;
+}
+
+.center {
+  text-align: center;
+  background: #f16e62;
+}
+
+th {
+  color: white;
+}
+
+#vol,
+#songs {
+  width: 90%;
+}

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  /* background-color: rgb(29, 31, 32); */
+  padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+  color: black;
+  background-color: #024043;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  background-image: url('./assets/devPortfolioImage.jpeg');
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(255, 174, 0);
+}
+
+.heading-text {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: #333;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  text-shadow: rgb(0, 0, 0) 9px 0 18px;
+  background-color: #052d3e48;
+}
+
+section {
+  padding: 25px;
+  overflow: hidden;
+}
+
+img {
+  height: 100px;
+  margin: 10px;
+}
+
+main section:nth-child(2n) {
+  background-color: antiquewhite;
+}
+
+#projects img,
+#skills img {
+  float: left;
+  margin-right: 20px;
+}
+
+#about-me img {
+  float: right;
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+h2,
+img,
+p {
+  margin: 20px;
+}
+
+.banner {
+  padding: 100px 0;
+  text-shadow: rgb(0, 0, 0) 9px 0 18px;
+}
+
+#contact-me {
+  text-align: center;
+}

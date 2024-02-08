@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(50, 48, 46);
+  color: white;
+  font-family: "Gill Sans";
+}
+h1 {
+  margin: 40px;
+}
+
+p {
+  margin: 40px;
+}
+
+#my_id {
+  color: rgb(60, 255, 226);
+  text-align: center;
+}
+.my_class {
+  font-size: 20px;
+  border: dashed;
+  padding: 2%;
+}

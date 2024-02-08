@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background: #333;
+  /* background-image: url('../image/neom-gj7WgSOIIu4-unsplash.jpg');
+  background-size: 100%; */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 35px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+  color: white;
+}
+
+ul li a {
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+li a:hover {
+  color: greenyellow;
+}
+
+.container {
+  text-align: 0 auto;
+}
+
+a {
+  color: white;
+}
+
+img {
+  max-width: 80%;
+  max-height: 500px;
+}
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: bolder;
+  background: rgb(255, 98, 0);
+  color: white;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 15px;
+  width: 200px;
+  border: 1px solid white;
+}
+
+.odd {
+  background: rgba(240, 173, 91, 0.561);
+}
+
+/* table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background-color: rgb(36, 36, 40);
+  color: white;
+}
+
+table td,
+th {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even),
+tbody tr:nth-child(even) {
+  background: rgba(243, 85, 6, 0.102);
+} */
+
+.box {
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin: 35px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  background-color: rgb(96, 211, 213);
+}
+
+.box6 {
+  background-image: url('../image/neom-gj7WgSOIIu4-unsplash.jpg');
+  background-size: cover;
+}
+
+.box1 {
+  border: dotted 5px white;
+  background-color: darkslateblue;
+}
+
+.box2 {
+  border: double 10px white;
+  background-color: aqua;
+}
+
+.box3 {
+  border: groove 10px;
+  border-color: blue green yellow red;
+}
+
+.box4 {
+  border: 5px dashed white;
+  border-radius: 25px;
+  background-color: lightgreen;
+}
+
+.box5 {
+  border: 5px dotted white;
+  border-radius: 50%;
+}
+
+.pic1 {
+  float: left;
+  height: 200px;
+}

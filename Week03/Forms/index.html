@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <table>
+      <thead>
+        <tr class="center">
+          <th>Description</th>
+          <th>Input example</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>type="button"</td>
+          <td><input type="button" value="I am a button" /></td>
+          <td>Needs value attribute for button text.</td>
+        </tr>
+
+        <tr>
+          <td>type="checkbox"</td>
+          <td>
+            <input type="checkbox" name="checkboxV1" id="checkbox01" value="true" />
+            <label for="checkbox01">checkbox</label>
+            <br />
+            <input type="checkbox" name="checkboxV1" id="checkbox02" value="true" />
+            <label for="checkbox02">checkbox</label>
+            <br />
+            <input type="checkbox" name="checkboxV1" id="checkbox03" value="true" />
+            <label for="checkbox03">checkbox</label>
+          </td>
+          <td>Checkbox text comes after input tag</td>
+        </tr>
+
+        <tr>
+          <td>type="color"</td>
+          <td><input type="color" name="color" id="color" value="#ff1500" /></td>
+          <td>type="color" is not supported in IE11 or older, or Safari 9.1 or older</td>
+        </tr>
+
+        <tr>
+          <td>type="date"</td>
+          <td><input type="date" name="" id="" /></td>
+          <td>type="date" is not supported in IE9 and earlier</td>
+        </tr>
+
+        <tr>
+          <td>type="datetime-local"</td>
+          <td><input type="datetime-local" name="" id="" /></td>
+          <td>specifies a date and time input field, with no time zone.</td>
+        </tr>
+
+        <tr>
+          <td>input="radio"</td>
+          <td>
+            <input type="radio" name="radio" id="gaga" />
+            <label for="gaga">Radio gaga</label><br />
+            <input type="radio" name="radio" id="gugu" />
+            <label for="gugu">Radio gugu</label><br />
+          </td>
+          <td>Radio buttons allow you to use one option.</td>
+        </tr>
+
+        <tr>
+          <td>type="email"</td>
+          <td><input type="email" name="" id="" /></td>
+          <td>type="email" is not supported in IE9 and earlier</td>
+        </tr>
+
+        <tr>
+          <td>type="file"</td>
+          <td><input type="file" name="" id="" /></td>
+          <td>defines a file-select field and a "Browse" button for file uploads.</td>
+        </tr>
+
+        <tr>
+          <td>type="image"</td>
+          <td><input type="image" src="image.jpg" alt="" width="150" height="100" /></td>
+          <td>defines an image as a submit button.</td>
+        </tr>
+
+        <tr>
+          <td>type="month"</td>
+          <td>
+            <label for="monthDate">Month Year</label>
+            <input type="month" name="" id="monthDate" />
+          </td>
+          <td>allows the user to select a month and year</td>
+        </tr>
+
+        <tr>
+          <td>Text Area</td>
+          <td>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </td>
+          <td>
+            The size of a text area can be specified by the cols and rows attributes, or even better; through CSS'
+            height and width properties.
+          </td>
+        </tr>
+
+        <tr>
+          <td>type="number"</td>
+          <td>
+            <label for="">number: </label>
+            <input type="number" name="" id="" />
+          </td>
+          <td>defines a numeric input field.</td>
+        </tr>
+
+        <tr>
+          <td>type="password"</td>
+          <td>
+            <label for="">password:</label>
+            <input type="password" id="pwd" name="pwd" />
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>type="range"</td>
+          <td>
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50" />
+          </td>
+          <td>
+            defines a control for entering a number whose exact value is not important (like a slider control). Default
+            range is 0 to 100
+          </td>
+        </tr>
+
+        <tr>
+          <td>Select example</td>
+          <td>
+            <select name="songs" id="songs">
+              <option value="album1">Shear heart attack</option>
+              <option value="album2">A night at the opera</option>
+              <option value="album3">A day at the races</option>
+            </select>
+          </td>
+          <td>
+            By default this creates a dropdown that allows the user one choice. Adding size and multiple attributes will
+            allow the user to pick many.
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
