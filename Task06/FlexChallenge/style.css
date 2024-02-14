@@ -4,90 +4,117 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
+html {
+  height: 100%;
 }
 
-.site-title {
-  background-color: yellow;
-  width: 50%;
+body {
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.pm {
+  margin: 2px;
+  min-height: 100px;
 }
 
 header {
   display: flex;
-  height: 10%;
+}
+
+.site-title {
+  background-color: yellow;
+  flex: 1;
+}
+
+nav {
+  flex: 1;
 }
 
 ul {
-  list-style-type: none;
+  display: flex;
+  list-style: none;
+}
+
+li {
   background-color: pink;
+  flex: 1;
+}
+
+/* main area */
+main {
   display: flex;
   height: 100%;
 }
 
-ul li {
-  flex: 1;
+section {
+  flex: 3;
 }
 
 .post-title {
-  background-color: #3b6493;
-  flex: 1;
-}
-
-.post-meta {
-  background-color: aquamarine;
-  flex: 1;
-}
-
-.main-content {
-  background-color: darkgrey;
-}
-
-.main-content-img {
-  background-color: yellow;
-}
-
-.side-bar {
-  background-color: orangered;
-}
-
-.ads {
-  background-color: green;
-}
-
-.other-stuff {
-  background-color: blueviolet;
-}
-
-footer {
-  background-color: darkred;
-  height: 10%;
-}
-
-main {
-  display: flex;
-  height: 80%;
-}
-
-section {
-  flex: 8;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
+  background-color: darkslategrey;
 }
 
 .section-post-container {
   display: flex;
-  height: 80%;
+  height: calc(100% - 104px);
+}
+
+.post-meta {
+  flex: 1;
+  background-color: lightgreen;
 }
 
 .main-content-container {
   flex: 3;
+  display: flex;
+  flex-direction: column;
 }
 
-.pm {
-  border: 2px solid white;
+.main-content {
+  background-color: lightgray;
+  flex: 1;
+}
+
+.main-content-img {
+  background-color: yellow;
+  flex: 2;
+}
+
+/* aside area */
+aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+aside div:first-child {
+  background-color: orange;
+  flex: 1;
+}
+
+aside div:nth-child(2) {
+  background-color: green;
+  flex: 1;
+}
+
+aside div:last-child {
+  background-color: violet;
+  flex: 1;
+}
+
+/* footer */
+
+footer {
+  background-color: brown;
+}
+
+@media (min-width: 768x) {
+  main {
+    flex-direction: column;
+  }
+  .section-post-container {
+    display: flex;
+  }
 }
