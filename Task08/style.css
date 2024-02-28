@@ -39,3 +39,48 @@ body {
   background-color: yellow;
   grid-column: 1 / span 4;
 }
+
+.two {
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  grid-template-areas:
+    'top top top top'
+    'left content content right'
+    'left content content right'
+    'left content content right'
+    'bottom bottom bottom bottom';
+  grid-auto-rows: 1fr;
+  gap: 0.4rem;
+}
+
+.header {
+  grid-area: top;
+  background-color: green;
+  padding: 1rem;
+  min-height: 100px;
+}
+
+.left {
+  grid-area: left;
+  background-color: blue;
+  padding: 1rem;
+}
+
+.main {
+  grid-area: content;
+  background-color: pink;
+  padding: 1rem;
+}
+
+.aside {
+  grid-area: right;
+  background-color: orange;
+  padding: 1rem;
+}
+
+.footer {
+  grid-area: bottom;
+  background-color: red;
+  padding: 1rem;
+}
