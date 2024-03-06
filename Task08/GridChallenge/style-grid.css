@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Stitle {
+  background-color: yellow;
+  grid-column: 1 / span 3;
+}
+
+.nav {
+  background-color: pink;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 0.4rem;
+}
+
+.Ptitle {
+  background-color: gray;
+  grid-column: 1 / span 5;
+}
+
+.meta {
+  background-color: mediumaquamarine;
+}
+
+.content {
+  background-color: lightgray;
+}
+
+.image {
+  background-color: yellow;
+}
+
+.sidebar {
+  background-color: orange;
+}
+.ads {
+  background-color: green;
+}
+
+.stuff {
+  background-color: pink;
+  grid-row: 5 / span 2;
+}
+
+.footer {
+  background-color: brown;
+  grid-column: 1 / span 6;
+}
