@@ -1,0 +1,87 @@
+:root {
+  --background-color: cornsilk;
+  --light: skyblue;
+  --highlight: salmon;
+  --dark: #333;
+  --font: 'Oswald', sans-serif;
+  --gradient: linear-gradient(to right top, #051937, #004d7a, #008793, #005193, #1233eb);
+}
+
+body {
+  background-image: var(--gradient);
+  font-family: var(--font);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  height: 200px;
+  width: 150px;
+  background-color: var(--light);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s ease-in-out;
+  margin: 50px;
+}
+
+.card:hover {
+  transform: rotate(125deg);
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: var(--light);
+  box-shadow: 0 0 5px var(--dark);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: circleAnimate;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 3s;
+}
+
+@keyframes circleAnimate {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 0;
+    left: 300px;
+  }
+  50% {
+    top: 300px;
+    left: 300px;
+  }
+  75% {
+    top: 300px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.menu-item h1::after {
+  background-color: var(--highlight);
+  content: '';
+  height: 4px;
+  width: 0;
+  display: inherit;
+  transition: all 1s ease-in;
+}
+
+.menu-item:hover h1::after {
+  width: 100%;
+}
