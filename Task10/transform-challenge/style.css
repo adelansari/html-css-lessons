@@ -17,3 +17,83 @@ body {
     background-position: 0% 50%;
   }
 }
+
+.fifth-task {
+  background-color: goldenrod;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fifth-task h3 {
+  text-align: center;
+  padding: 25px;
+}
+
+/* LEFT SIDE */
+.fifth-task h3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 200px;
+  border-left: 5px solid #fc5185;
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::before {
+  bottom: 0;
+}
+
+/* RIGHT SIDE */
+.fifth-task h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 200px;
+  border-right: 5px solid #fc5185;
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::after {
+  top: 0;
+}
+
+/* TOP SIDE */
+.fifth-task::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 200px;
+  border-top: 5px solid #fc5185;
+  transition: all 1s;
+}
+
+.fifth-task:hover::before {
+  right: 0;
+}
+
+/* BOTTOM SIDE */
+.fifth-task::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  bottom: 0;
+  right: 0;
+  border-bottom: 5px solid #fc5185;
+  transition: all 1s;
+}
+
+.fifth-task:hover::after {
+  left: 0;
+}
